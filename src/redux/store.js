@@ -8,7 +8,8 @@ function mutate(state, action) {
   switch(action.type) {
     case 'SET_LEVEL':
       return state
-        .set('answer', null)
+        .set('answerStatus', AnswerStatus.UNANSWERED)
+        .set('answer', '')
         .merge(action.level);
     case 'CHANGE_ANSWER_STATUS':
       return state

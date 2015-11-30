@@ -44,6 +44,7 @@ const MainView = React.createClass({
         </div>
         <div className='row'>
           <InputView
+            levelIndex={levelIndex}
             levelAnswer={levelAnswer}
             levelAnswerIsExact={levelAnswerIsExact}
             onAnswer={answer => this.props.answered(levelIndex, answer)}

@@ -30,7 +30,7 @@ const AnswerView = React.createClass({
         {status === AnswerStatus.CORRECT &&
           <div style={styles.loadingIndicator}>
             <div>CORRECT</div>
-            <button onClick={this.nextLevel}>
+            <button onClick={this.props.nextLevel}>
               Next level
             </button>
           </div>
@@ -38,7 +38,7 @@ const AnswerView = React.createClass({
         {status === AnswerStatus.INCORRECT &&
           <div style={styles.loadingIndicator}>
             <div>INCORRECT</div>
-            <button onClick={this.resetLevel}>
+            <button onClick={this.props.resetLevel}>
               Try again
             </button>
           </div>

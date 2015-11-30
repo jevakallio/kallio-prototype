@@ -2,7 +2,7 @@
 'use strict';
 const _ = require('lodash');
 const React = require('react');
-const {string, func, bool} = React.PropTypes;
+const {string, func, bool, number} = React.PropTypes;
 const KEY_ENTER = 13;
 
 const InputView = React.createClass({
@@ -10,6 +10,7 @@ const InputView = React.createClass({
   propTypes: {
 
     // state
+    levelIndex: number.isRequired,
     levelAnswer: string.isRequired,
     levelAnswerIsExact: bool.isRequired,
 
@@ -67,15 +68,9 @@ const InputView = React.createClass({
       : attempt.indexOf(expected) !== -1;
 
     if (correct) {
-      setTimeout(() => this.props.onCorrectAnswer(attempt), 2000);
-      // this.setState({
-      //   showSuccess: true
-      // });
+      setTimeout(() => this.props.onCorrectAnswer(attempt), 1000);
     } else {
-      setTimeout(() => this.props.onWrongAnswer(attempt), 2000);
-      // this.setState({
-      //   showError: true
-      // });
+      setTimeout(() => this.props.onWrongAnswer(attempt), 1000);
     }
   },
 

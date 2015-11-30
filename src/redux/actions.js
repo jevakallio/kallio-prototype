@@ -5,9 +5,7 @@ let AnswerStatus = require('../enums/answer-status');
 
 module.exports = {
   setLevel(levelId) {
-
-    let nextLevelId = levelId + 1;
-    let level = levels[nextLevelId];
+    let level = levels[levelId];
     if(!level) {
       throw new Error('No known level ' + levelId);
     }
