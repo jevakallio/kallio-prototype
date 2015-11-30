@@ -1,0 +1,86 @@
+body {
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.clue-container {
+  width: 100%;
+  height: 70vh;
+}
+
+.answer-container {
+  width: 100%;
+  height: 30vh;
+}
+
+/** STAY TUNED PAGE */
+.stay-tuned-page {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.stay-tuned-page .twitter-logo {
+  height: 60px;
+  margin-top: 40px;
+}
+
+
+/** LANDING PAGE */
+.landing-page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../assets/background.png);
+  z-index: 999;
+}
+
+
+.landing-page .start-game {
+  position: relative;
+  top: 40px;
+  font-size: 16px;
+}
+
+.static-page .title-container {
+  position: relative;
+  top: 25vh;
+  text-align: center;
+  color: white;
+}
+
+.static-page .title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.static-page .tagline {
+  font-size: 32px;
+}
+
+.static-page .subtitle {
+  font-size: 26px;
+}
+
+.static-page .subtitle a {
+  color: white;
+}
+
+.red-button {
+  background-color: hsl(347, 91%, 29%);
+  color: white;
+  border-width: 0px;
+}
+
+.red-button:hover {
+  background-color: hsl(347, 93%, 41%);
+  color: white;
+}
