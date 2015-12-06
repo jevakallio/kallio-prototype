@@ -40,9 +40,15 @@ function hasSavedState() {
 function getInitialState() {
   return toImmutable({
     ...levels[0],
+    started: false,
     levelIndex: 0,
     answer: '',
-    answerStatus: AnswerStatus.UNANSWERED
+    answerStatus: AnswerStatus.UNANSWERED,
+    showHintScreen: false,
+    showWayHint: false,
+    showDetailHint: false,
+    detailHintLifelineUsed: false,
+    wayHintLifelineUsed: false
   });
 }
 

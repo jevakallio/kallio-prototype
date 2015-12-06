@@ -19,7 +19,8 @@ const InputView = React.createClass({
     //actions
     onAnswer: func.isRequired,
     onCorrectAnswer: func.isRequired,
-    onWrongAnswer: func.isRequired
+    onWrongAnswer: func.isRequired,
+    displayHints: func.isRequired
   },
 
   getInitialState() {
@@ -63,10 +64,11 @@ const InputView = React.createClass({
     this.props.onAnswer(answer);
 
     let isCorrect = answerUtil.check(answer, this.props.levelAnswer, this.props.levelAnswerIsExact);
+    let fakeProgressDuration = 4000 + (Math.floor(Math.random() * 1000));
     if (isCorrect) {
-      setTimeout(() => this.props.onCorrectAnswer(answer), 1000);
+      setTimeout(() => this.props.onCorrectAnswer(answer), fakeProgressDuration);
     } else {
-      setTimeout(() => this.props.onWrongAnswer(answer), 1000);
+      setTimeout(() => this.props.onWrongAnswer(answer), fakeProgressDuration);
     }
   },
 
@@ -89,16 +91,36 @@ const InputView = React.createClass({
 
     return (
       <div style={styles.container} className='answer-container'>
-        <label htmlFor='answer'>Answer</label>
-        <input
-          name='answer'
-          type='text'
-          value={this.state.value}
-          onKeyUp={this.onKeyUp}
-          onKeyPress={this.onKeyPress}
-          onChange={this.onChange}
-          style={inputStyle}>
-        </input>
+        <div style={styles.inputContainer}>
+          <label htmlFor='answer'>Answer</label>
+          <input
+            name='answer'
+            type='text'
+            value={this.state.value}
+            onKeyUp={this.onKeyUp}
+            onKeyPress={this.onKeyPress}
+            onChange={this.onChange}
+            autoCapitalize="off"
+            autoCorrect="off"
+            autoComplete="off"
+            style={inputStyle}>
+          </input>
+        </div>
+        <div style={styles.buttoniContainer}>
+          <button
+            onClick={this.props.displayHints}
+            className='stealth-button'
+            style={styles.hint}>
+            I need help!
+          </button>
+          <button
+            onClick={() => this.checkAnswer(this.state.value)}
+            disabled={!this.state.value}
+            className='submit-button'
+            style={styles.submit}>
+            Submit
+          </button>
+        </div>
       </div>
     );
   }
@@ -110,7 +132,19 @@ const styles = {
   },
   answerInput: {
     color: '#222',
-    width: '95%'
+    width: '100%'
+  },
+  inputContainer: {
+    width: '50vh'
+  },
+  buttoniContainer: {
+    textAlign: 'center'
+  },
+  hint: {
+    float: 'left'
+  },
+  submit: {
+    float: 'right'
   }
 };
 

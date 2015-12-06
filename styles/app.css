@@ -2,6 +2,8 @@ body {
   background-color: white;
   color: black;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .hidden {
@@ -10,7 +12,7 @@ body {
 
 .clue-container {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
 }
 
 .answer-container {
@@ -84,4 +86,32 @@ body {
 .red-button:hover {
   background-color: hsl(347, 93%, 41%);
   color: white;
+}
+
+.submit-button {
+  background-color: #222;
+  color: white;
+  border-color: transparent;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  color: white;
+}
+
+.submit-button:active {
+  color: white;
+  border-color: transparent;
+}
+
+.stealth-button {
+  background-color: transparent;
+  color: #ccc;
+  border-color: transparent;
+}
+
+.stealth-button:hover {
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
 }

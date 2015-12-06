@@ -4,6 +4,13 @@ let analytics = require('../util/analytics');
 let AnswerStatus = require('../enums/answer-status');
 
 module.exports = {
+
+  startGame() {
+    return {
+      type: 'START_GAME'
+    }
+  },
+
   setLevel(levelId) {
     let level = levels[levelId];
     if(!level) {
@@ -21,6 +28,30 @@ module.exports = {
       answerStatus: AnswerStatus.UNANSWERED,
       answer: ''
     };
+  },
+
+  displayHints() {
+    return {
+      type: 'SHOW_HINT_SCREEN'
+    }
+  },
+
+  hideHints() {
+    return {
+      type: 'HIDE_HINT_SCREEN'
+    }
+  },
+
+  requestWayHint() {
+    return {
+      type: 'SHOW_WAY_HINT'
+    }
+  },
+
+  requestDetailHint() {
+    return {
+      type: 'SHOW_DETAIL_HINT'
+    }
   },
 
   answered(levelId, answer) {
