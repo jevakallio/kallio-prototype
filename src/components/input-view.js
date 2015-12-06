@@ -3,6 +3,8 @@
 const _ = require('lodash');
 const React = require('react');
 const {string, func, bool, number} = React.PropTypes;
+const answerUtil = require('../util/answer-util');
+
 const KEY_ENTER = 13;
 
 const InputView = React.createClass({
@@ -60,17 +62,11 @@ const InputView = React.createClass({
 
     this.props.onAnswer(answer);
 
-    let attempt = answer.trim().toLowerCase();
-    let expected = this.props.levelAnswer.toLowerCase();
-
-    let correct = this.props.levelAnswerIsExact
-      ? attempt === expected
-      : attempt.indexOf(expected) !== -1;
-
-    if (correct) {
-      setTimeout(() => this.props.onCorrectAnswer(attempt), 1000);
+    let isCorrect = answerUtil.check(answer, this.props.levelAnswer, this.props.levelAnswerIsExact);
+    if (isCorrect) {
+      setTimeout(() => this.props.onCorrectAnswer(answer), 1000);
     } else {
-      setTimeout(() => this.props.onWrongAnswer(attempt), 1000);
+      setTimeout(() => this.props.onWrongAnswer(answer), 1000);
     }
   },
 
@@ -92,7 +88,7 @@ const InputView = React.createClass({
     }
 
     return (
-      <div className='answer-container'>
+      <div style={styles.container} className='answer-container'>
         <label htmlFor='answer'>Answer</label>
         <input
           name='answer'
@@ -109,10 +105,12 @@ const InputView = React.createClass({
 });
 
 const styles = {
+  container: {
+
+  },
   answerInput: {
     color: '#222',
-    width: '95%',
-    marginRight: '5%'
+    width: '95%'
   }
 };
 
