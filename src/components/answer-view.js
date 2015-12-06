@@ -4,7 +4,7 @@ const _ = require('lodash');
 const React = require('react');
 const AnswerStatus = require('../enums/answer-status');
 
-const {string, func, bool} = React.PropTypes;
+const {string, func, bool, any} = React.PropTypes;
 const AnswerView = React.createClass({
   displayName: 'AnswerView',
   propTypes: {

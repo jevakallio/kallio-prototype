@@ -40,7 +40,7 @@ const styles = {
   },
   clue: {
     padding: '0px 20px',
-    textAlign: 'justify'
+    fontSize: '20px'
   }
 };
 
