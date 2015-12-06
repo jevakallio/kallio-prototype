@@ -214,5 +214,5 @@ module.exports = [
     levelWayHint: `Go down the hill, look for Roman numerals to help you find the way. Just a bit further down...`,
     levelDetailHint: `Yes, you need to go inside Om'Pu. It's nearly always open. Look around you well once inside, it's not always easy to spot.`,
     levelExplanation: `Congratulations! Stay for a celebratory beer, why don't you. You'll notice there are often names engraved in the glasses. And the pinball machine is decent too. Just the right Kallio mix of local drunks and hipsters (as if there's a difference.)`
-  },
+  }
 ];
