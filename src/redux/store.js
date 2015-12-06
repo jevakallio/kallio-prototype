@@ -6,6 +6,9 @@ const AnswerStatus = require('../enums/answer-status');
 
 function mutate(state, action) {
   switch(action.type) {
+    case 'START_GAME':
+      return state
+        .set('started', true);
     case 'SET_LEVEL':
       return state
         .set('answerStatus', AnswerStatus.UNANSWERED)

@@ -36,6 +36,7 @@ const MainView = React.createClass({
     answeredCorrectly: func.isRequired,
     answeredIncorrectly: func.isRequired,
     setLevel: func.isRequired,
+    startGame: func.isRequired,
     displayHints: func.isRequired,
     hideHints: func.isRequired,
     resetLevel: func.isRequired,
@@ -43,7 +44,31 @@ const MainView = React.createClass({
     requestDetailHint: func.isRequired
   },
   render() {
-    const {levelIndex, levelClue, levelAnswer, levelExplanation, levelAnswerIsExact} = this.props;
+    const {started, levelIndex, levelClue, levelAnswer, levelExplanation, levelAnswerIsExact} = this.props;
+
+    if(!started) {
+      return (
+        <div className='container'>
+          <h2 style={styles.instructionHeading}>Cryptic Kallio</h2>
+          <div className='row' style={styles.instructions}>
+            Gather with your team at the Pitkäsilta bridge, between Kaisaniemi and Hakaniemi.
+          </div>
+          <div className='row' style={styles.instructions}>
+            {`The game is timed, so keep up pace, but dont forget to enjoy yourself!`}
+          </div>
+          <div className='row' style={styles.instructions}>
+            {`Press START when your team is ready to receive your first clue`}
+          </div>
+          <button
+            onClick={this.props.startGame}
+            style={styles.startButton}
+            className='red-button'>
+            Start
+          </button>
+        </div>
+      )
+    }
+
     return (
       <div className='container'>
         <div className='row'>
@@ -92,6 +117,19 @@ const styles = {
   closeInventoryButton: {
     marginTop: '30px',
     display: 'inline-block'
+  },
+  instructionHeading: {
+    marginTop: '40px',
+    textAlign: 'center',
+    fontWeight: 'bold'
+  },
+  instructions: {
+    padding: '20px 0px 0px 0px',
+    fontSize: '18px'
+  },
+  startButton: {
+    width: '100%',
+    marginTop: '20px'
   }
 }
 module.exports = MainView;

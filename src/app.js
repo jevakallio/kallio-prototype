@@ -32,5 +32,5 @@ startButton.addEventListener('click', () => {
   startGame();
 });
 
-document.querySelector('.landing-page').style.display = 'none';
-startGame();
+// document.querySelector('.landing-page').style.display = 'none';
+// startGame();

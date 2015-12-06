@@ -4,6 +4,13 @@ let analytics = require('../util/analytics');
 let AnswerStatus = require('../enums/answer-status');
 
 module.exports = {
+
+  startGame() {
+    return {
+      type: 'START_GAME'
+    }
+  },
+
   setLevel(levelId) {
     let level = levels[levelId];
     if(!level) {

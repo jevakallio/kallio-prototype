@@ -40,6 +40,7 @@ function hasSavedState() {
 function getInitialState() {
   return toImmutable({
     ...levels[0],
+    started: false,
     levelIndex: 0,
     answer: '',
     answerStatus: AnswerStatus.UNANSWERED,
