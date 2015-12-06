@@ -85,3 +85,31 @@ body {
   background-color: hsl(347, 93%, 41%);
   color: white;
 }
+
+.submit-button {
+  background-color: #222;
+  color: white;
+  border-color: transparent;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  color: white;
+}
+
+.submit-button:active {
+  color: white;
+  border-color: transparent;
+}
+
+.stealth-button {
+  background-color: transparent;
+  color: #ccc;
+  border-color: transparent;
+}
+
+.stealth-button:hover {
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
+}
