@@ -7,46 +7,212 @@ function encode(answer) {
 module.exports = [
   {
     levelIndex: 0,
-    levelExplanation: '',
+    levelName: `Pitkäsilta`,
     levelClue: `Let's start easy. Find the building years of the bridge and do the maths.`,
     levelAnswer: encode('-2'),
     levelAnswerIsExact: true,
-    levelWayHint: '',
-    levelDetailHint: ''  },
+    levelWayHint: 'Look at the ends of the bridge to find a plaque.',
+    levelDetailHint: 'The building years of the bridge are numbers. Use the dash as a minus.',
+    levelExplanation: `Good job! Pitkäsilta means long bridge. There used to be two bridges here, and the one you see is the longer one of the two, hence the name, despite the fact that it doesn't seem so long today`
+  },
   {
     levelIndex: 1,
-    levelExplanation: '',
-    levelClue:`Find an even longer bridge, towards brutal grey monsters. On the way, you'll find a gift from the east. Who is it from?`,
-    levelAnswer: encode('Moskova, Moskva, Mokba, Moscow'),
+    levelName: `World Peace`,
+    levelClue: `Walk towards an even longer bridge, in the direction of brutal grey monsters. On the way, you'll find a gift from the east. Who is it from?`,
+    levelAnswer: encode('moskova, moskva, moscow'),
     levelAnswerIsExact: false,
-    levelWayHint: '',
-    levelDetailHint: ''
+    levelWayHint: 'Walk around John Stenbergin ranta and then turn right.',
+    levelDetailHint: 'Read the plaque on a large statue devoted to world peace, which is in Finnish, Swedish and Russian.',
+    levelExplanation: 'Apparently Moscow first wanted to gift Helsinki a statue of Lenin, so mayor Ilaskivi said the world peace status was a defensive victory'
   },
   {
     levelIndex: 2,
-    levelExplanation: '',
-    levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Once there, head into the bazaar to spy a knight in shining armor. What swims near him?`,
+    levelName: `Bazaar`,
+    levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Under it, head into the bazaar to spy a knight in shining armor. What swims near him?`,
     levelAnswer: encode('fish, pike, perch, hauki, kala'),
     levelAnswerIsExact: false,
-    levelWayHint: '',
-    levelDetailHint: ''
+    levelWayHint: `Look for a large McDonald's M across the square`,
+    levelDetailHint: 'In the passage by a shop called Basaari, find a knight in another shop window.',
+    levelExplanation: 'Jolly good!'
   },
   {
     levelIndex: 3,
-    levelExplanation: '',
+    levelName: `Bronze writer`,
     levelClue: `From a protected fighter, pass unprotected fighters to find a man on the wall. Who was born here?`,
     levelAnswer: encode('waltari'),
     levelAnswerIsExact: false,
-    levelWayHint: '',
-    levelDetailHint: ''
+    levelWayHint: 'Continue through the passage, pass the boxers and continue',
+    levelDetailHint: 'Look for a bronze plaque on the wall at the end of the park',
+    levelExplanation: `Waltari's bestselling book, The Egyptian, is so far, the only Finnish novel to be adapted into a Hollywood film`
   },
   {
     levelIndex: 4,
-    levelExplanation: '',
-    levelClue: `Bend around the copper tower, and find two women in the distance. If ASU is EKI, what is EITA?`,
+    levelName: `Kauppahalli`,
+    levelClue: `Bend around the copper tower, and find two women in the distance. Approach them and answer this: If ASU is EKI, what is EITA?`,
     levelAnswer: encode('ring'),
     levelAnswerIsExact: true,
-    levelWayHint: '',
-    levelDetailHint: ''
+    levelWayHint: `Head north, and turn right at the lake`,
+    levelDetailHint: 'Look at the letters forming the name of the market hall, try to map them to each other',
+    levelExplanation: 'This market hall is scheduled for renovation in 2017, something many residents and vendors object to. Have a look inside, and stop for a coffee on the 2nd floor.'
+  },
+  {
+    levelIndex: 5,
+    levelName: `Viivoan`,
+    levelClue: `Passing between bricks, up ahead, you come across a red cock. If longan is 24, what is the dragon?`,
+    levelAnswer: encode('9'),
+    levelAnswerIsExact: true,
+    levelWayHint: `Seek exotic produce on a loud street.`,
+    levelDetailHint: `No need to go all the way in, the answer you seek is at the entrance`,
+    levelExplanation: `This is one of many ethnic shops in Hakaniemi, popular with both immigrants and locals. They also sell  vegetarian ingredients like tofu and tempeh.`
+  },
+  {
+    levelIndex: 6,
+    levelName: `Kaiku`,
+    levelClue: `Seek a gold-handed time teller in the distance. Enter the courtyard, ignoring the black mountain. What colour swings more?`,
+    levelAnswer: encode('yellow'),
+    levelAnswerIsExact: true,
+    levelWayHint: `Go up Hämeentie until a clock on a tower. Go into the courtyard of that building.`,
+    levelDetailHint: `Look for barrel swings in the courtyard.`,
+    levelExplanation: `Kaiku was listed in The Guardian as one of the best clubs in Europe in 2013. The building has been a match stick factory, a big bakery and a factory for Heteka metal spring bed frames.`
+  },
+  {
+    levelIndex: 7,
+    levelName: `Statues in the wall`,
+    levelClue: `Head back the way you came, to an uphill park. Let dogs guide you past an obelisk. Look up! If soldier is 1 and rooster is 4, what is 3?`,
+    levelAnswer: encode('owl'),
+    levelAnswerIsExact: true,
+    levelWayHint: `The park is Alli Tryggin puisto`,
+    levelDetailHint: `Look at the walls of the buildings on top of the stairs.`,
+    levelExplanation: `This is the Kallio gymnasium. The building originally housed the first grammar school (fin: oppikoulu) in the working class quarters north of the pitkäsilta bridge`
+  },
+  {
+    levelIndex: 8,
+    levelName: `Library`,
+    levelClue: `This bookish bird takes you downhill, and you enter under the red roof. With 7 on your left and 8 on your right, head up until you see a small boy. What is he listening to?`,
+    levelAnswer: encode('tree'),
+    levelAnswerIsExact: false,
+    levelWayHint: `Look for the Kallio library.`,
+    levelDetailHint: `Go up the stairs and find a small boy. Find the other part of the same art installation.`,
+    levelExplanation: `Behind the Listening Tree there's a very cozy space. Take a break if you like, and enjoy the view down over Porthaninkatu.`
+  },
+  {
+    levelIndex: 9,
+    levelName: `Bear park cafe`,
+    levelClue: `Outside in the green, someone is eating an ant nest. Seek shelter in a similarly named cafe. Who here is J5 K5?`,
+    levelAnswer: encode('queen'),
+    levelAnswerIsExact: true,
+    levelWayHint: `Look for the bear in the park.`,
+    levelDetailHint: `Go play regal music at a furry indoors cafe.`,
+    levelExplanation: `You can enjoy this cozy gay cafe while listening to Queen! Or if the weather allows, visit the sister cafe outside in the park, a traditional functional style Finnish Lippakioski.`
+  },
+  {
+    levelIndex: 10,
+    levelName: `Garages`,
+    levelClue: `What do James Bond and penicillin have in common? Go there, and turn right at the white amphora. At which number in the old garage stores can you see two elves?`,
+    levelAnswer: encode('5'),
+    levelAnswerIsExact: true,
+    levelWayHint: `Look for the bear in the park.`,
+    levelDetailHint: `Go play regal music at a furry indoors cafe.`,
+    levelExplanation: `These were originally built as garages, but it turned out that the people who bought the apartments there couldn't afford cars, so they became improvised shops instead.`
+  },
+  {
+    levelIndex: 11,
+    levelName: `Sand tram`,
+    levelClue: `Forge ahead, to cities made in sand. Take a closer look: which tram goes here?`,
+    levelAnswer: encode('8'),
+    levelAnswerIsExact: true,
+    levelWayHint: `These sanded ciities are very small. You'll need to go inside the playground.`,
+    levelDetailHint: `There are two cities, only one has transport. Find that one, and look at the transport.`,
+    levelExplanation: `You're now in the area of Torkkelinmäki. This tiny area has over 30000 inhabitants, making it as densely populated as Manhattan.`
+  },
+  {
+    levelIndex: 12,
+    levelName: `Rye cats`,
+    levelClue: `CATcher in the RYE,\nvery nearby,\nLess than 100 steps away,\nwhat are they drinking?`,
+    levelAnswer: encode('limonadi, lemonade'),
+    levelAnswerIsExact: true,
+    levelWayHint: `Two Franzens away, look into windows.`,
+    levelDetailHint: `Find cats of rye and look for a bottle.`,
+    levelExplanation: `Our friend Iiris fondly remembers these cats from her childhood, and always wanting to look at them. Do they bake new ones, or are they still the same old dusty rye bread cats?`
+  },
+  {
+    levelIndex: 13,
+    levelName: `Talking gutter`,
+    levelClue: `10 steps up, and ears to the ground? But what shall I do?`,
+    levelAnswer: encode('leave'),
+    levelAnswerIsExact: false,
+    levelWayHint: `Go up the hill from the bakery, not very far.`,
+    levelDetailHint: `The plumbing here is very odd. Try listening closely to the gutter.`,
+    levelExplanation: `This art installation by Markku 'Sika' Puustinen is not always on, but listen closely to the street gutter to hear the sounds of departure announcements at Helsinki airport.`
+  },
+  {
+    levelIndex: 14,
+    levelName: `Kotiharju`,
+    levelClue: `Via author Jonathan or actor Peter, find a nearby establishment where minds and bodies are soothed. At the entrance, 3 men sit always. The middle one is clad in which colour?`,
+    levelAnswer: encode('red'),
+    levelAnswerIsExact: true,
+    levelWayHint: `Franzenin(kuja+katu). Left on Harjutorinkatu.`,
+    levelDetailHint: `Look inside the window of the Harjutori sauna.`,
+    levelExplanation: `The uppermost benches of these saunas can fit 20-30 people. The men's sauna is downstairs, and the women's upstairs. Feel free to stop for a break if you like to join. They also rent out towels, and no clothing is needed.`
+  },
+  {
+    levelIndex: 15,
+    levelName: `Game to play`,
+    levelClue: `Right on a dictator's street, past the sun, then down. Stray away from the warrior women. But on the way, what game shall we play?`,
+    levelAnswer: encode('sex'),
+    levelAnswerIsExact: false,
+    levelWayHint: `Turn right on Aadolfinkatu, left on Pengerinkatu`,
+    levelDetailHint: `Look at the signs of the shops on Pengerkatu.`,
+    levelExplanation: `There are lots of sex shops and strip joints in Kallio. Not that we particularly recommend this one.`
+  },
+  {
+    levelIndex: 16,
+    levelName: `Ebeneser`,
+    levelClue: `Left on this city's street. It used to be a lake. Cross at the half moon, and find a girl high up. What is she holding?`,
+    levelAnswer: encode('doll'),
+    levelAnswerIsExact: false,
+    levelWayHint: `Left on Helsinki street.`,
+    levelDetailHint: `On the city's street lies an old place for what is was to be new. Look up at the reliefs.`,
+    levelExplanation: `There are lots of sex shops and strip joints in Kallio. Not that we particularly recommend this one.`
+  },
+  {
+    levelIndex: 17,
+    levelName: `Window fruit`,
+    levelClue: `Continue until just past split stairs, without crossing. Which fruit in a glass?`,
+    levelAnswer: encode('grape'),
+    levelAnswerIsExact: false,
+    levelWayHint: `Continue up the street. Between 15 and a prime it can be found.`,
+    levelDetailHint: `Look at the glass window.`,
+    levelExplanation: `This was mostly wet farm land before the street was built. See a photo of it looking like a lake on an electric booth on Harjukatu 2.`
+  },
+  {
+    levelIndex: 18,
+    levelName: `Arla`,
+    levelClue: `Onwards still, turn left to find a dairy-named hot house. Beyond the holy gate, what time is it?`,
+    levelAnswer: encode('13., 13:, 1:, 1., I., I:'),
+    levelAnswerIsExact: false,
+    levelWayHint: `Walk on Helsinginkatu until you turn on Kaarlenkatu.`,
+    levelDetailHint: `Look at the courtyard right behind the gate of the sauna.`,
+    levelExplanation: `In Finland, wet cupping has been done at least since the 15th century, and it is done traditionally in saunas. The cupping cups were made of cattle horns with a valve mechanism in it to create an partial vacuum by sucking the air out. Here at the Arla sauna you can still have cupping performed on you, if you dare.`
+  },
+  {
+    levelIndex: 19,
+    levelName: `Kallio church`,
+    levelClue: `Through the day you've been seeing a tall tower looming. You know what we mean. Find it now, and go to the side with the longest view, and draw the line all the way south. Where is its starry end?`,
+    levelAnswer: encode('observato, tähti'),
+    levelAnswerIsExact: false,
+    levelWayHint: `From Arla up Kaarle, veer right at a popular second hand store to find the holiest on the cliff.`,
+    levelDetailHint: `Trace the road south from the church on a map. Where does the long road end?`,
+    levelExplanation: `The street axis you just traced is the longest in all of Helsinki! Go inside the church to see the beautiful altar piece, if it's open. This church is supposed to have the shape of Salomon's Temple, though who the hell knows.`
+  },
+  {
+    levelIndex: 20,
+    levelName: `Om'Pu`,
+    levelClue: `Nearly there, let's wind down this game. Down you go past Matti Carita Mikko Xavier Xena Vihtori Ilari, and find DJ Worm. Enter. What is the man trying to break through?`,
+    levelAnswer: encode('wall'),
+    levelAnswerIsExact: false,
+    levelWayHint: `Go down the hill, look for Roman numerals to help you find the way. Just a bit further down...`,
+    levelDetailHint: `Yes, you need to go inside Om'Pu. It's nearly always open. Look around you well once inside, it's not always easy to spot.`,
+    levelExplanation: `Congratulations! Stay for a celebratory beer, why don't you. You'll notice there are often names engraved in the glasses. And the pinball machine is decent too. Just the right Kallio mix of local drunks and hipsters (as if there's a difference.)`
   },
 ];
