@@ -13,11 +13,7 @@ module.exports = [
     levelAnswerIsExact: true,
     levelWayHint: 'Look at the ends of the bridge to find a plaque.',
     levelDetailHint: 'The building years of the bridge are numbers. Use the dash as a minus.',
-<<<<<<< HEAD
     levelExplanation: `Good job! Pitkäsilta means long bridge. There used to be two bridges here, and the one you see is the longer one of the two, although by today's standards it's quite short.`
-=======
-    levelExplanation: `Good job! Pitkäsilta means long bridge. There used to be two bridges here, and the one you see is the longer one of the two, hence the name, despite the fact that it doesn't seem so long today`
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
   },
   {
     levelIndex: 1,
@@ -27,11 +23,7 @@ module.exports = [
     levelAnswerIsExact: false,
     levelWayHint: 'Walk around John Stenbergin ranta and then turn right.',
     levelDetailHint: 'Read the plaque on a large statue devoted to world peace, which is in Finnish, Swedish and Russian.',
-<<<<<<< HEAD
     levelExplanation: 'Apparently Moscow first wanted to gift Helsinki a statue of Lenin, so mayor Ilaskivi said the world peace statue was a defensive victory'
-=======
-    levelExplanation: 'Apparently Moscow first wanted to gift Helsinki a statue of Lenin, so mayor Ilaskivi said the world peace status was a defensive victory'
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
   },
   {
     levelIndex: 2,
@@ -39,11 +31,7 @@ module.exports = [
     levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Under it, head into the bazaar to spy a knight in shining armor. What swims near him?`,
     levelAnswer: encode('fish, pike, perch, hauki, kala'),
     levelAnswerIsExact: false,
-<<<<<<< HEAD
     levelWayHint: `Look for a large McDonald's M across the square.`,
-=======
-    levelWayHint: `Look for a large McDonald's M across the square`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelDetailHint: 'In the passage by a shop called Basaari, find a knight in another shop window.',
     levelExplanation: 'Jolly good!'
   },
@@ -53,13 +41,8 @@ module.exports = [
     levelClue: `From a protected fighter, pass unprotected fighters to find a man on the wall. Who was born here?`,
     levelAnswer: encode('waltari'),
     levelAnswerIsExact: false,
-<<<<<<< HEAD
     levelWayHint: `Continue through the passage, pass the boxers and continue to the end of the square.',
     levelDetailHint: 'Look for a bronze plaque on the wall at the end of the park. What is the man's name?`,
-=======
-    levelWayHint: 'Continue through the passage, pass the boxers and continue',
-    levelDetailHint: 'Look for a bronze plaque on the wall at the end of the park',
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelExplanation: `Waltari's bestselling book, The Egyptian, is so far, the only Finnish novel to be adapted into a Hollywood film`
   },
   {
@@ -68,42 +51,24 @@ module.exports = [
     levelClue: `Bend around the copper tower, and find two women in the distance. Approach them and answer this: If ASU is EKI, what is EITA?`,
     levelAnswer: encode('ring'),
     levelAnswerIsExact: true,
-<<<<<<< HEAD
     levelWayHint: `Head north, and turn right at the lake. Go to the Hakaniemi market hall.`,
     levelDetailHint: 'Look at the letters on the market hall, try to map them to each other.',
     levelExplanation: `This market hall is scheduled for renovation in 2017, something many residents and vendors object to. Have a look inside, and stop for a coffee on the 2nd floor if you'd like.`
-=======
-    levelWayHint: `Head north, and turn right at the lake`,
-    levelDetailHint: 'Look at the letters forming the name of the market hall, try to map them to each other',
-    levelExplanation: 'This market hall is scheduled for renovation in 2017, something many residents and vendors object to. Have a look inside, and stop for a coffee on the 2nd floor.'
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
   },
   {
     levelIndex: 5,
     levelName: `Viivoan`,
     levelClue: `Passing between bricks, up ahead, you come across a red cock. If longan is 24, what is the dragon?`,
-<<<<<<< HEAD
     levelAnswer: encode('9, nine'),
     levelAnswerIsExact: true,
     levelWayHint: `Seek an Asian shop on Hämeentie.`,
     levelDetailHint: `No need to go all the way in, the answer you seek is at the entrance.`,
     levelExplanation: `This is one of many ethnic shops in Hakaniemi, popular with both immigrants and locals. They also sell vegetarian ingredients like tofu and tempeh.`
-=======
-    levelAnswer: encode('9'),
-    levelAnswerIsExact: true,
-    levelWayHint: `Seek exotic produce on a loud street.`,
-    levelDetailHint: `No need to go all the way in, the answer you seek is at the entrance`,
-    levelExplanation: `This is one of many ethnic shops in Hakaniemi, popular with both immigrants and locals. They also sell  vegetarian ingredients like tofu and tempeh.`
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
   },
   {
     levelIndex: 6,
     levelName: `Kaiku`,
-<<<<<<< HEAD
     levelClue: `Seek a gold-handed time teller in the distance. Enter the courtyard, and ignore the black mountain. What colour swings more?`,
-=======
-    levelClue: `Seek a gold-handed time teller in the distance. Enter the courtyard, ignoring the black mountain. What colour swings more?`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelAnswer: encode('yellow'),
     levelAnswerIsExact: true,
     levelWayHint: `Go up Hämeentie until a clock on a tower. Go into the courtyard of that building.`,
@@ -113,29 +78,17 @@ module.exports = [
   {
     levelIndex: 7,
     levelName: `Statues in the wall`,
-<<<<<<< HEAD
     levelClue: `Head back the way you came, to an uphill park. Let dogs guide you past an obelisk and up stairs. Look up! If soldier is 1 and rooster is 4, what is 3?`,
     levelAnswer: encode('owl'),
     levelAnswerIsExact: true,
     levelWayHint: `The park is Alli Tryggin puisto.`,
     levelDetailHint: `Look at the walls of the buildings at the top of the stairs.`,
-=======
-    levelClue: `Head back the way you came, to an uphill park. Let dogs guide you past an obelisk. Look up! If soldier is 1 and rooster is 4, what is 3?`,
-    levelAnswer: encode('owl'),
-    levelAnswerIsExact: true,
-    levelWayHint: `The park is Alli Tryggin puisto`,
-    levelDetailHint: `Look at the walls of the buildings on top of the stairs.`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelExplanation: `This is the Kallio gymnasium. The building originally housed the first grammar school (fin: oppikoulu) in the working class quarters north of the pitkäsilta bridge`
   },
   {
     levelIndex: 8,
     levelName: `Library`,
-<<<<<<< HEAD
     levelClue: `The owl takes you downhill. Enter under the red roof. With 7 on your left and 8 on your right, head up until you see a small boy. What is he listening to?`,
-=======
-    levelClue: `This bookish bird takes you downhill, and you enter under the red roof. With 7 on your left and 8 on your right, head up until you see a small boy. What is he listening to?`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelAnswer: encode('tree'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for the Kallio library.`,
@@ -145,15 +98,9 @@ module.exports = [
   {
     levelIndex: 9,
     levelName: `Bear park cafe`,
-<<<<<<< HEAD
     levelClue: `Outside in the green, someone is pawing at an ant nest. Seek shelter in a similarly named cafe. Who here is J5 K5?`,
     levelAnswer: encode('queen'),
     levelAnswerIsExact: false,
-=======
-    levelClue: `Outside in the green, someone is eating an ant nest. Seek shelter in a similarly named cafe. Who here is J5 K5?`,
-    levelAnswer: encode('queen'),
-    levelAnswerIsExact: true,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelWayHint: `Look for the bear in the park.`,
     levelDetailHint: `Go play regal music at a furry indoors cafe.`,
     levelExplanation: `You can enjoy this cozy gay cafe while listening to Queen! Or if the weather allows, visit the sister cafe outside in the park, a traditional functional style Finnish Lippakioski.`
@@ -162,52 +109,31 @@ module.exports = [
     levelIndex: 10,
     levelName: `Garages`,
     levelClue: `What do James Bond and penicillin have in common? Go there, and turn right at the white amphora. At which number in the old garage stores can you see two elves?`,
-<<<<<<< HEAD
     levelAnswer: encode('5, five'),
     levelAnswerIsExact: true,
     levelWayHint: `Go down Fleminginkatu.`,
     levelDetailHint: `Look closely at the garage door windows.`,
-=======
-    levelAnswer: encode('5'),
-    levelAnswerIsExact: true,
-    levelWayHint: `Look for the bear in the park.`,
-    levelDetailHint: `Go play regal music at a furry indoors cafe.`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelExplanation: `These were originally built as garages, but it turned out that the people who bought the apartments there couldn't afford cars, so they became improvised shops instead.`
   },
   {
     levelIndex: 11,
     levelName: `Sand tram`,
     levelClue: `Forge ahead, to cities made in sand. Take a closer look: which tram goes here?`,
-<<<<<<< HEAD
     levelAnswer: encode('8, eight'),
     levelAnswerIsExact: true,
     levelWayHint: `These sanded cities are very small. You'll need to go inside the playground.`,
-=======
-    levelAnswer: encode('8'),
-    levelAnswerIsExact: true,
-    levelWayHint: `These sanded ciities are very small. You'll need to go inside the playground.`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelDetailHint: `There are two cities, only one has transport. Find that one, and look at the transport.`,
     levelExplanation: `You're now in the area of Torkkelinmäki. This tiny area has over 30000 inhabitants, making it as densely populated as Manhattan.`
   },
   {
     levelIndex: 12,
     levelName: `Rye cats`,
-<<<<<<< HEAD
     levelClue: `CATcher in the RYE,\nvery nearby,\nLess than 100 steps away,\nwhat bottled beverage might they drink?`,
-=======
-    levelClue: `CATcher in the RYE,\nvery nearby,\nLess than 100 steps away,\nwhat are they drinking?`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelAnswer: encode('limonadi, lemonade'),
     levelAnswerIsExact: true,
     levelWayHint: `Two Franzens away, look into windows.`,
     levelDetailHint: `Find cats of rye and look for a bottle.`,
-<<<<<<< HEAD
     levelExplanation: `Our friend Iiris fondly remembers these cats from her childhood, and always wanted to go look at them. Do they bake new ones, or are they still the same old dusty rye bread cats?`
-=======
-    levelExplanation: `Our friend Iiris fondly remembers these cats from her childhood, and always wanting to look at them. Do they bake new ones, or are they still the same old dusty rye bread cats?`
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
   },
   {
     levelIndex: 13,
@@ -226,21 +152,13 @@ module.exports = [
     levelAnswer: encode('red'),
     levelAnswerIsExact: true,
     levelWayHint: `Franzenin(kuja+katu). Left on Harjutorinkatu.`,
-<<<<<<< HEAD
     levelDetailHint: `Look inside the window of the Kotiharju sauna.`,
-=======
-    levelDetailHint: `Look inside the window of the Harjutori sauna.`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelExplanation: `The uppermost benches of these saunas can fit 20-30 people. The men's sauna is downstairs, and the women's upstairs. Feel free to stop for a break if you like to join. They also rent out towels, and no clothing is needed.`
   },
   {
     levelIndex: 15,
     levelName: `Game to play`,
-<<<<<<< HEAD
     levelClue: `Right on a dictator's street, past the sun, until the end. Don't go the way of the warrior women. But on the way, what game shall we play? One a day keeps the doctor away.`,
-=======
-    levelClue: `Right on a dictator's street, past the sun, then down. Stray away from the warrior women. But on the way, what game shall we play?`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelAnswer: encode('sex'),
     levelAnswerIsExact: false,
     levelWayHint: `Turn right on Aadolfinkatu, left on Pengerinkatu`,
@@ -253,51 +171,29 @@ module.exports = [
     levelClue: `Left on this city's street. It used to be a lake. Cross at the half moon, and find a girl high up. What is she holding?`,
     levelAnswer: encode('doll'),
     levelAnswerIsExact: false,
-<<<<<<< HEAD
     levelWayHint: `Left on Helsinginkatu, look for Scrooge.`,
     levelDetailHint: `Half way up the street lies an old place for what is was to be new. Look up at the reliefs.`,
     levelExplanation: `The Ebeneser Foundation based the first folk kindergarten in the Nordic countries.`
-=======
-    levelWayHint: `Left on Helsinki street.`,
-    levelDetailHint: `On the city's street lies an old place for what is was to be new. Look up at the reliefs.`,
-    levelExplanation: `There are lots of sex shops and strip joints in Kallio. Not that we particularly recommend this one.`
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
   },
   {
     levelIndex: 17,
     levelName: `Window fruit`,
-<<<<<<< HEAD
     levelClue: `Continue until just past split stairs, without crossing. Which fruit is iced in the glass?`,
     levelAnswer: encode('grape'),
     levelAnswerIsExact: false,
     levelWayHint: `Continue up the street. Between 15 and a prime it can be found.`,
     levelDetailHint: `Look at the glass window at Helsinginkatu 13-15`,
-=======
-    levelClue: `Continue until just past split stairs, without crossing. Which fruit in a glass?`,
-    levelAnswer: encode('grape'),
-    levelAnswerIsExact: false,
-    levelWayHint: `Continue up the street. Between 15 and a prime it can be found.`,
-    levelDetailHint: `Look at the glass window.`,
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
     levelExplanation: `This was mostly wet farm land before the street was built. See a photo of it looking like a lake on an electric booth on Harjukatu 2.`
   },
   {
     levelIndex: 18,
     levelName: `Arla`,
     levelClue: `Onwards still, turn left to find a dairy-named hot house. Beyond the holy gate, what time is it?`,
-<<<<<<< HEAD
     levelAnswer: encode('13.2, 13:2, 1:2, 1.2, I., I:, one twenty'),
     levelAnswerIsExact: false,
     levelWayHint: `Walk on Helsinginkatu until you turn on Kaarlenkatu.`,
     levelDetailHint: `Look at the courtyard right behind the gate of the sauna. You can look through the holes in the gate to see the answer.`,
     levelExplanation: `In Finland, wet cupping has been done at least since the 15th century, and it is done traditionally in saunas. The cupping cups were made of cattle horns with a valve mechanism in it to create a partial vacuum by sucking the air out. Here at the Arla sauna you can still have cupping performed on you, if you dare.`
-=======
-    levelAnswer: encode('13., 13:, 1:, 1., I., I:'),
-    levelAnswerIsExact: false,
-    levelWayHint: `Walk on Helsinginkatu until you turn on Kaarlenkatu.`,
-    levelDetailHint: `Look at the courtyard right behind the gate of the sauna.`,
-    levelExplanation: `In Finland, wet cupping has been done at least since the 15th century, and it is done traditionally in saunas. The cupping cups were made of cattle horns with a valve mechanism in it to create an partial vacuum by sucking the air out. Here at the Arla sauna you can still have cupping performed on you, if you dare.`
->>>>>>> a9bbfb725ee534376eda2975011c4c04ca6120f8
   },
   {
     levelIndex: 19,
