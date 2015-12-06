@@ -19,7 +19,8 @@ const InputView = React.createClass({
     //actions
     onAnswer: func.isRequired,
     onCorrectAnswer: func.isRequired,
-    onWrongAnswer: func.isRequired
+    onWrongAnswer: func.isRequired,
+    displayHints: func.isRequired
   },
 
   getInitialState() {
@@ -99,11 +100,17 @@ const InputView = React.createClass({
             onKeyUp={this.onKeyUp}
             onKeyPress={this.onKeyPress}
             onChange={this.onChange}
+            autoCapitalize="off"
+            autoCorrect="off"
+            autoComplete="off"
             style={inputStyle}>
           </input>
         </div>
         <div style={styles.buttoniContainer}>
-          <button className='stealth-button' style={styles.hint}>
+          <button
+            onClick={this.props.displayHints}
+            className='stealth-button'
+            style={styles.hint}>
             I need help!
           </button>
           <button

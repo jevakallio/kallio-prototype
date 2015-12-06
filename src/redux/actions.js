@@ -23,6 +23,30 @@ module.exports = {
     };
   },
 
+  displayHints() {
+    return {
+      type: 'SHOW_HINT_SCREEN'
+    }
+  },
+
+  hideHints() {
+    return {
+      type: 'HIDE_HINT_SCREEN'
+    }
+  },
+
+  requestWayHint() {
+    return {
+      type: 'SHOW_WAY_HINT'
+    }
+  },
+
+  requestDetailHint() {
+    return {
+      type: 'SHOW_DETAIL_HINT'
+    }
+  },
+
   answered(levelId, answer) {
     analytics.addEvent({
       event: 'attemptAnswer',

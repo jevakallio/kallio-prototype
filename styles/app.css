@@ -2,6 +2,8 @@ body {
   background-color: white;
   color: black;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .hidden {
@@ -10,7 +12,7 @@ body {
 
 .clue-container {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
 }
 
 .answer-container {

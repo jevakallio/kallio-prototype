@@ -10,11 +10,32 @@ function mutate(state, action) {
       return state
         .set('answerStatus', AnswerStatus.UNANSWERED)
         .set('answer', '')
+        .set('showWayHint', false)
+        .set('showDetailHint', false)
         .merge(action.level);
     case 'CHANGE_ANSWER_STATUS':
       return state
         .set('answer', 'answer' in action ? action.answer : state.get('answer'))
         .set('answerStatus', action.answerStatus);
+    case 'SHOW_HINT_SCREEN': {
+      return state.set('showHintScreen', true);
+    }
+
+    case 'HIDE_HINT_SCREEN': {
+      return state.set('showHintScreen', false);
+    }
+
+    case 'SHOW_WAY_HINT': {
+      return state
+        .set('showWayHint', true)
+        .set('wayHintLifelineUsed', true);
+    }
+    case 'SHOW_DETAIL_HINT': {
+      return state
+        .set('showDetailHint', true)
+        .set('detailHintLifelineUsed', true);
+    }
+
     case 'FINISHED':
       // hack, @TODO move page into the react scope
       document.querySelector('.stay-tuned-page').style.display = 'block';

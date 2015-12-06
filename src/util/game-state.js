@@ -42,7 +42,12 @@ function getInitialState() {
     ...levels[0],
     levelIndex: 0,
     answer: '',
-    answerStatus: AnswerStatus.UNANSWERED
+    answerStatus: AnswerStatus.UNANSWERED,
+    showHintScreen: false,
+    showWayHint: false,
+    showDetailHint: false,
+    detailHintLifelineUsed: false,
+    wayHintLifelineUsed: false
   });
 }
 

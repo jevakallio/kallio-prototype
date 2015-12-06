@@ -4,6 +4,7 @@ const React = require('react');
 const ClueView = require('./clue-view');
 const AnswerView = require('./answer-view');
 const InputView = require('./input-view');
+const HintView = require('./hint-view');
 const AnswerStatus = require('../enums/answer-status');
 
 const {number, func, string, bool, array, object, oneOf} = React.PropTypes;
@@ -14,12 +15,17 @@ const MainView = React.createClass({
   propTypes: {
 
     // state
-    levelIndex: string.isRequired,
-    levelTitle: string.isRequired,
+    levelIndex: number.isRequired,
+    levelName: string.isRequired,
     levelClue: string.isRequired,
     levelExplanation: string.isRequired,
     levelAnswer: string.isRequired,
     levelAnswerIsExact: bool.isRequired,
+    levelWayHint: string.isRequired,
+    levelDetailHint: string.isRequired,
+    showHintScreen: bool.isRequired,
+    showWayHint: bool.isRequired,
+    showDetailHint: bool.isRequired,
 
     // transient state
     answer: string,
@@ -30,7 +36,11 @@ const MainView = React.createClass({
     answeredCorrectly: func.isRequired,
     answeredIncorrectly: func.isRequired,
     setLevel: func.isRequired,
-    resetLevel: func.isRequired
+    displayHints: func.isRequired,
+    hideHints: func.isRequired,
+    resetLevel: func.isRequired,
+    requestWayHint: func.isRequired,
+    requestDetailHint: func.isRequired
   },
   render() {
     const {levelIndex, levelClue, levelAnswer, levelExplanation, levelAnswerIsExact} = this.props;
@@ -50,6 +60,7 @@ const MainView = React.createClass({
             onAnswer={answer => this.props.answered(levelIndex, answer)}
             onCorrectAnswer={() => this.props.answeredCorrectly(levelIndex)}
             onWrongAnswer={() => this.props.answeredIncorrectly(levelIndex)}
+            displayHints={this.props.displayHints}
             />
         </div>
         <AnswerView
@@ -59,6 +70,18 @@ const MainView = React.createClass({
           answerStatus={this.props.answerStatus}
           nextLevel={() => this.props.setLevel(levelIndex + 1)}
           resetLevel={() => this.props.resetLevel()}
+          />
+        <HintView
+          levelWayHint={this.props.levelWayHint}
+          levelDetailHint={this.props.levelDetailHint}
+          wayHintLifelineUsed={this.props.wayHintLifelineUsed}
+          detailHintLifelineUsed={this.props.detailHintLifelineUsed}
+          showHintScreen={this.props.showHintScreen}
+          showWayHint={this.props.showWayHint}
+          showDetailHint={this.props.showDetailHint}
+          requestWayHint={this.props.requestWayHint}
+          requestDetailHint={this.props.requestDetailHint}
+          hideHints={this.props.hideHints}
           />
       </div>
     );
