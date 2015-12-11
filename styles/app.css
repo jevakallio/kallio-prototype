@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+.container {
+  width: 100% !important;
+}
+
 .hidden {
   display: none;
 }

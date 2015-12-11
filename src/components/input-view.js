@@ -135,7 +135,7 @@ const styles = {
     width: '100%'
   },
   inputContainer: {
-    width: '50vh'
+    width: '100%'
   },
   buttoniContainer: {
     textAlign: 'center'
