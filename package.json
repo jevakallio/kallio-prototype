@@ -8,7 +8,7 @@
     "build": "browserify src/app.js -t babelify --outfile dist/app.js",
     "watch": "watchify   src/app.js -t babelify --outfile dist/app.js",
     "lint": "eslint src/",
-    "poormansdeploy": "npm run build && cp -r index.html dist styles assets ../jevakallio.github.io/kallio"
+    "poormansdeploy": "npm run build && cp -r index.html dist styles assets ../jevakallio.github.io/cryptic"
   },
   "repository": {
     "type": "git",
