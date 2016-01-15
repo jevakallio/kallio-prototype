@@ -28,8 +28,8 @@ module.exports = [
   {
     levelIndex: 2,
     levelName: `Bazaar`,
-    levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Under it, head into the bazaar to spy a knight in shining armor. What swims near him?`,
-    levelAnswer: encode('fish, pike, perch, hauki, kala'),
+    levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Under it, head into the bazaar to spy a knight in shining armor. What other metal man can you see here?`,
+    levelAnswer: 'robot',
     levelAnswerIsExact: false,
     levelWayHint: `Look for a large McDonald's M across the square.`,
     levelDetailHint: 'In the passage by a shop called Basaari, find a knight in another shop window.',
@@ -41,8 +41,8 @@ module.exports = [
     levelClue: `From a protected fighter, pass unprotected fighters to find a man on the wall. Who was born here?`,
     levelAnswer: encode('waltari'),
     levelAnswerIsExact: false,
-    levelWayHint: `Continue through the passage, pass the boxers and continue to the end of the square.',
-    levelDetailHint: 'Look for a bronze plaque on the wall at the end of the park. What is the man's name?`,
+    levelWayHint: `Continue through the passage, pass the boxers and continue to the end of the square.`,
+    levelDetailHint: `Look for a bronze plaque on the wall at the end of the park. What is the man's name?`,
     levelExplanation: `Waltari's bestselling book, The Egyptian, is so far, the only Finnish novel to be adapted into a Hollywood film`
   },
   {
