@@ -29,7 +29,7 @@ module.exports = [
     levelIndex: 2,
     levelName: `Bazaar`,
     levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Under it, head into the bazaar to spy a knight in shining armor. What other metal man can you see here?`,
-    levelAnswer: 'robot',
+    levelAnswer: encode('robot'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for a large McDonald's M across the square.`,
     levelDetailHint: 'In the passage by a shop called Basaari, find a knight in another shop window.',
