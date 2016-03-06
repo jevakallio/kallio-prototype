@@ -18,7 +18,7 @@ module.exports = [
   {
     levelIndex: 1,
     levelName: `World Peace`,
-    levelClue: `Walk towards an even longer bridge, in the direction of brutal grey monsters. On the way, you'll find a gift from the east. Who is it from?`,
+    levelClue: `Turn your back to the south and head towards brutal grey monsters in the distance. Have our pedaling friends show you the way. Ere long, you'll find a gift from the the east. Who is it from?​`,
     levelAnswer: encode('moskova, moskva, moscow'),
     levelAnswerIsExact: false,
     levelWayHint: 'Walk around John Stenbergin ranta and then turn right.',
@@ -28,7 +28,7 @@ module.exports = [
   {
     levelIndex: 2,
     levelName: `Bazaar`,
-    levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Under it, head into the bazaar to spy a knight in shining armor. What other metal man can you see here?`,
+    levelClue: ​`From this communist monument, head towards a monument to capitalism. Down low, tunnel into the bazaar to spy a knight in shining armor. Which other metallic humanoid can you see here?`,
     levelAnswer: encode('robot'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for a large McDonald's M across the square.`,
@@ -41,7 +41,7 @@ module.exports = [
     levelClue: `From a protected fighter, pass unprotected fighters to find a man on the wall. Who was born here?`,
     levelAnswer: encode('waltari'),
     levelAnswerIsExact: false,
-    levelWayHint: `Continue through the passage, pass the boxers and continue to the end of the square.`,
+    levelWayHint: `Continue through the passage, pass the boxers and continue to the end of the park.`,
     levelDetailHint: `Look for a bronze plaque on the wall at the end of the park. What is the man's name?`,
     levelExplanation: `Waltari's bestselling book, The Egyptian, is so far, the only Finnish novel to be adapted into a Hollywood film`
   },
@@ -78,7 +78,7 @@ module.exports = [
   {
     levelIndex: 7,
     levelName: `Statues in the wall`,
-    levelClue: `Head back the way you came, to an uphill park. Let dogs guide you past an obelisk and up stairs. Look up! If soldier is 1 and rooster is 4, what is 3?`,
+    levelClue: `Head back from whence you came, to a diagonal park. Let dogs guide you past an obelisk and up stairs. Look up! If soldier is 1 and rooster is 4, what is 3?`,
     levelAnswer: encode('owl'),
     levelAnswerIsExact: true,
     levelWayHint: `The park is Alli Tryggin puisto.`,
@@ -88,7 +88,7 @@ module.exports = [
   {
     levelIndex: 8,
     levelName: `Library`,
-    levelClue: `The owl takes you downhill. Enter under the red roof. With 7 on your left and 8 on your right, head up until you see a small boy. What is he listening to?`,
+    levelClue: `The owl takes you downhill. Enter under the red roof. With 7 on your left and 8 on your right, head up until you see a little man. What is he listening to?`,
     levelAnswer: encode('tree'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for the Kallio library.`,
@@ -98,7 +98,7 @@ module.exports = [
   {
     levelIndex: 9,
     levelName: `Bear park cafe`,
-    levelClue: `Outside in the green, someone is pawing at an ant nest. Seek shelter in a similarly named cafe. Who here is J5 K5?`,
+    levelClue: `Outside in the green, someone is pawing at an ant nest. Seek shelter in a similarly named cafe. Which blue-blooded strap is J5 K5?`,
     levelAnswer: encode('queen'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for the bear in the park.`,
@@ -108,7 +108,7 @@ module.exports = [
   {
     levelIndex: 10,
     levelName: `Garages`,
-    levelClue: `What do James Bond and penicillin have in common? Go there, and turn right at the white amphora. At which number in the old garage stores can you see two elves?`,
+    levelClue: `What do James Bond and penicillin have in common? No, it's not the beginning of a bad joke. Once you figure out the answer, go there, and turn right at the white amphora. At which number in the old garage stores can you see two elves?`,
     levelAnswer: encode('5, five'),
     levelAnswerIsExact: true,
     levelWayHint: `Go down Fleminginkatu.`,
@@ -128,7 +128,7 @@ module.exports = [
   {
     levelIndex: 12,
     levelName: `Rye cats`,
-    levelClue: `CATcher in the RYE,\nvery nearby,\nLess than 100 steps away,\nwhat bottled beverage might they drink?`,
+    levelClue: `CATcher in the RYE,\nvery nearby,\nLess than 100 steps away,\nwhich bottled beverage might they drink?`,
     levelAnswer: encode('limonadi, lemonade'),
     levelAnswerIsExact: true,
     levelWayHint: `Two Franzens away, look into windows.`,
@@ -168,12 +168,12 @@ module.exports = [
   {
     levelIndex: 16,
     levelName: `Ebeneser`,
-    levelClue: `Left on this city's street. It used to be a lake. Cross at the half moon, and find a girl high up. What is she holding?`,
+    levelClue: `Left on this city's street. Cross at the half moon, you're looking for a building. It's well decorated, so the people who built it definitely weren't scrooges. Find a girl up high. What is she holding?`,
     levelAnswer: encode('doll'),
     levelAnswerIsExact: false,
-    levelWayHint: `Left on Helsinginkatu, look for Scrooge.`,
-    levelDetailHint: `Half way up the street lies an old place for what is was to be new. Look up at the reliefs.`,
-    levelExplanation: `The Ebeneser Foundation based the first folk kindergarten in the Nordic countries.`
+    levelWayHint: `On Helsinginkatu. What was the name of the main character in Dickens' Christmas Carol?`,
+    levelDetailHint: `At the Ebeneser building look at the reliefs.`,
+    levelExplanation: `On a different note, this area was mostly wet farm land before the street was built. See a photo of it looking like a lake on an electric booth on Harjukatu 2.`
   },
   {
     levelIndex: 17,
@@ -192,13 +192,13 @@ module.exports = [
     levelAnswer: encode('13.2, 13:2, 1:2, 1.2, I., I:, one twenty'),
     levelAnswerIsExact: false,
     levelWayHint: `Walk on Helsinginkatu until you turn on Kaarlenkatu.`,
-    levelDetailHint: `Look at the courtyard right behind the gate of the sauna. You can look through the holes in the gate to see the answer.`,
+    levelDetailHint: `Look at the walls beyond the black gate.`,
     levelExplanation: `In Finland, wet cupping has been done at least since the 15th century, and it is done traditionally in saunas. The cupping cups were made of cattle horns with a valve mechanism in it to create a partial vacuum by sucking the air out. Here at the Arla sauna you can still have cupping performed on you, if you dare.`
   },
   {
     levelIndex: 19,
     levelName: `Kallio church`,
-    levelClue: `Through the day you've been seeing a tall tower looming. You know what we mean. Find it now, and go to the side with the longest view, and draw the line all the way south. Where is its starry end?`,
+    levelClue: `Through the day you've been seeing a tall tower looming. You know what we mean. Find it now, and go to the side with the longest view, and draw the line all the way south. Which tory is at the end?`,
     levelAnswer: encode('observato, tähti'),
     levelAnswerIsExact: false,
     levelWayHint: `From Arla up Kaarle, veer right at a popular second hand store to find the holiest on the cliff.`,
