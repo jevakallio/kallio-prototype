@@ -177,18 +177,8 @@ module.exports = [
   },
   {
     levelIndex: 17,
-    levelName: `Window fruit`,
-    levelClue: `Continue until just past split stairs, without crossing. Which fruit is iced in the glass?`,
-    levelAnswer: encode('grape'),
-    levelAnswerIsExact: false,
-    levelWayHint: `Continue up the street. Between 15 and a prime it can be found.`,
-    levelDetailHint: `Look at the glass window at Helsinginkatu 13-15`,
-    levelExplanation: `This was mostly wet farm land before the street was built. See a photo of it looking like a lake on an electric booth on Harjukatu 2.`
-  },
-  {
-    levelIndex: 18,
     levelName: `Arla`,
-    levelClue: `Onwards still, turn left to find a dairy-named hot house. Beyond the holy gate, what time is it?`,
+    levelClue: `Onwards still on this city's road, you'll pass 6 prime street numbers before you turn left to find a dairy-named hot house. Beyond the holy gate, what time is it?`,
     levelAnswer: encode('13.2, 13:2, 1:2, 1.2, I., I:, one twenty'),
     levelAnswerIsExact: false,
     levelWayHint: `Walk on Helsinginkatu until you turn on Kaarlenkatu.`,
@@ -196,7 +186,7 @@ module.exports = [
     levelExplanation: `In Finland, wet cupping has been done at least since the 15th century, and it is done traditionally in saunas. The cupping cups were made of cattle horns with a valve mechanism in it to create a partial vacuum by sucking the air out. Here at the Arla sauna you can still have cupping performed on you, if you dare.`
   },
   {
-    levelIndex: 19,
+    levelIndex: 18,
     levelName: `Kallio church`,
     levelClue: `Through the day you've been seeing a tall tower looming. You know what we mean. Find it now, and go to the side with the longest view, and draw the line all the way south. Which tory is at the end?`,
     levelAnswer: encode('observato, tähti'),
@@ -206,7 +196,7 @@ module.exports = [
     levelExplanation: `The street axis you just traced is the longest in all of Helsinki! Go inside the church to see the beautiful altar piece, if it's open. This church is supposed to have the shape of Salomon's Temple, though who the hell knows.`
   },
   {
-    levelIndex: 20,
+    levelIndex: 19,
     levelName: `Om'Pu`,
     levelClue: `Nearly there, let's wind down this game. Down you go past Matti Carita Mikko Xavier Xena Vihtori Ilari, and find DJ Worm. Enter. What is the man trying to break through?`,
     levelAnswer: encode('wall'),
