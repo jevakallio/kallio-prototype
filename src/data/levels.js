@@ -161,7 +161,7 @@ module.exports = [
     levelClue: `Right on a dictator's street, past the sun, until the end. Don't go the way of the warrior women. But on the way, what game shall we play? One a day keeps the doctor away.`,
     levelAnswer: encode('sex'),
     levelAnswerIsExact: false,
-    levelWayHint: `Turn right on Aadolfinkatu, left on Pengerinkatu`,
+    levelWayHint: `Turn right on Aadolfinkatu, left on Pengerkatu`,
     levelDetailHint: `Look at the signs of the shops on Pengerkatu.`,
     levelExplanation: `There are lots of sex shops and strip joints in Kallio. Not that we particularly recommend this one.`
   },
