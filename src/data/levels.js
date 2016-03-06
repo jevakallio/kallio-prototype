@@ -18,7 +18,7 @@ module.exports = [
   {
     levelIndex: 1,
     levelName: `World Peace`,
-    levelClue: `Turn your back to the south and head towards brutal grey monsters in the distance. Have our pedaling friends show you the way. Ere long, you'll find a gift from the the east. Who is it from?​`,
+    levelClue: `Turn your back to the south and head towards brutal grey monsters in the distance. Have our pedaling friends show you the way. Ere long, you'll find a gift from the east. Who is it from?​`,
     levelAnswer: encode('moskova, moskva, moscow'),
     levelAnswerIsExact: false,
     levelWayHint: 'Walk around John Stenbergin ranta and then turn right.',
@@ -98,7 +98,7 @@ module.exports = [
   {
     levelIndex: 9,
     levelName: `Bear park cafe`,
-    levelClue: `Outside in the green, someone is pawing at an ant nest. Seek shelter in a similarly named cafe. Which blue-blooded strap is J5 K5?`,
+    levelClue: `Outside in the green, someone is pawing at an ant nest. Seek shelter in a similarly named cafe. Which blue-blooded option is J5 K5?`,
     levelAnswer: encode('queen'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for the bear in the park.`,
