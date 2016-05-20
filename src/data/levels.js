@@ -28,8 +28,8 @@ module.exports = [
   {
     levelIndex: 2,
     levelName: `Bazaar`,
-    levelClue: ​`From this communist monument, head towards a monument to capitalism. Down low, tunnel into the bazaar to spy a knight in shining armor. Which other metallic humanoid can you see here?`,
-    levelAnswer: encode('robot'),
+    levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Once there, head into the bazaar to spy a knight in shining armor. What swims near him?`,
+    levelAnswer: encode('pike, perch, hauki, kala'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for a large McDonald's M across the square.`,
     levelDetailHint: 'In the passage by a shop called Basaari, find a knight in another shop window.',
