@@ -28,7 +28,7 @@ module.exports = [
   {
     levelIndex: 2,
     levelName: `Bazaar`,
-    levelClue: `Turn away from this communist monument and head towards a monument to capitalism. Once there, head into the bazaar to spy a knight in shining armor. What swims near him?`,
+    levelClue: `Turn away from this communist monument and head towards arches of capitalism. Once there, head into the bazaar to spy a knight in shining armor. What swims near him?`,
     levelAnswer: encode('pike, perch, hauki, kala'),
     levelAnswerIsExact: false,
     levelWayHint: `Look for a large McDonald's M across the square.`,
@@ -58,7 +58,7 @@ module.exports = [
   {
     levelIndex: 5,
     levelName: `Viivoan`,
-    levelClue: `Passing between bricks, up ahead, you come across a red cock. If longan is 24, what is the dragon?`,
+    levelClue: `Passing between bricks, up ahead, you run into a red cock. If longan is 24, what is the dragon?`,
     levelAnswer: encode('9, nine'),
     levelAnswerIsExact: true,
     levelWayHint: `Seek an Asian shop on Hämeentie.`,
