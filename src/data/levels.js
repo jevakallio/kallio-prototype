@@ -68,11 +68,11 @@ module.exports = [
   {
     levelIndex: 6,
     levelName: `Kaiku`,
-    levelClue: `Seek a gold-handed time teller in the distance. Enter the courtyard, and ignore the black mountain. What colour swings more?`,
-    levelAnswer: encode('yellow'),
-    levelAnswerIsExact: true,
+    levelClue: `Seek a gold-handed time teller in the distance. Enter the courtyard, and ignore the black mountain. Colorful squares! What's the horse's ride?`,
+    levelAnswer: encode('plane, airplane, concorde'),
+    levelAnswerIsExact: false,
     levelWayHint: `Go up Hämeentie until a clock on a tower. Go into the courtyard of that building.`,
-    levelDetailHint: `Look for barrel swings in the courtyard.`,
+    levelDetailHint: `Look for graffiti painted in the colorful building in the courtyard.`,
     levelExplanation: `Kaiku was listed in The Guardian as one of the best clubs in Europe in 2013. The building has been a match stick factory, a big bakery and a factory for Heteka metal spring bed frames.`
   },
   {
