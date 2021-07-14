@@ -67,7 +67,15 @@ The application is written in an Extremely 2016 fashion, using the following too
 - [Redux](https://redux.js.org/) 1.x
 - [Immutable.js](https://github.com/immutable-js/immutable-js)
 
-### Files of interest
+### Areas of interest
 
 - Level data: [src/data/levels.js](src/data/levels.js)
 - Game logic: [src/redux/store.js](src/redux/store.js)
+- Visual styling
+  - Built upon [Skeleton CSS boilerplate](http://getskeleton.com/)
+  - General app styles in [styles/app.css](styles/app.css)
+  - Screen-specific styles defined in each UI component (see `const styles = {...}`) at the bottom of file
+
+## License
+
+[MIT](LICENSE)
