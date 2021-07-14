@@ -4,17 +4,16 @@ Prototype for Helsinki-based city adventure game
 
 ## Requirements
 
-### Node 12.x or older
+### [Node.js](https://nodejs.org)
 
-This project requires an older version of Node.js due to outdated build dependencies (`chokidar@2` and `fswatch@1`).
+The application should work on any relatively modern version of node (tested on 12.x and 14.x).
 
-The easiest way to manage multiple Node versions is with [Node Version Manager](https://github.com/nvm-sh/nvm):
+The recommended way to install and manage Node versions is with [Node Version Manager](https://github.com/nvm-sh/nvm):
 
 1. [Install nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-2. Run `nvm install 12` to install latest version Node 12.x
-3. Run `nvm use 12` to enable Node 12.x in current shell session
-
-Alternatively, you ca
+2. Run `nvm install 14` to install latest version Node 14.x
+3. Run `nvm use 14` to enable Node 14.x in current shell session
+4. Run `node -v` to verify that the expected version of Node is running
 
 ## Development
 
