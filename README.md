@@ -71,6 +71,8 @@ The application is written in an Extremely 2016 fashion, using the following too
 
 - Level data: [src/data/levels.js](src/data/levels.js)
 - Game logic: [src/redux/store.js](src/redux/store.js)
+- Game state: [src/utils/game-state.js](src/utils/game-state.js)
+  - Game progress is persisted as a URL hash, so you can save your progress by bookmarking the current URL
 - Visual styling
   - Built upon [Skeleton CSS boilerplate](http://getskeleton.com/)
   - General app styles in [styles/app.css](styles/app.css)
