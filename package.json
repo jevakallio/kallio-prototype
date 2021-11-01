@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/jevakallio/kallio-prototype",
   "dependencies": {
-    "bluebird": "^2.9.34",
+    "bluebird": "^3.0.0",
     "immutable": "^3.7.4",
     "lodash": "^3.10.1",
     "mobile-detect": "^1.2.1",
